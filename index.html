@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Anime</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV Shows</title>
 
     <style>
         body {
@@ -24,14 +24,10 @@
             background: #333;
             color: #fff;
             padding: 20px;
+            text-align: center;
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 20px;
         }
 
         header button {
@@ -44,7 +40,9 @@
             font-size: 14px;
         }
 
-        header button:hover { opacity: 0.8; }
+        header button:hover {
+            opacity: 0.8;
+        }
 
         section {
             padding: 20px;
@@ -54,25 +52,21 @@
             transition: background 0.3s, color 0.3s;
         }
 
-        body.dark section { background: #1c1c1c; }
-
-        /* Link-button style */
-        .link-button {
-            display: inline-block;
-            padding: 10px 14px;
-            background: #0066cc;
-            color: #fff !important;
-            border-radius: 6px;
-            text-decoration: none;
-            margin: 6px 0;
-            font-size: 16px;
+        body.dark section {
+            background: #1c1c1c;
         }
 
-        .link-button:hover { opacity: 0.9; }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
 
-        body.dark .link-button {
-            background: #4ea3ff;
-            color: #000 !important;
+        body.dark a {
+            color: #4ea3ff;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         /* Search Bar */
